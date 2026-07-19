@@ -1,0 +1,161 @@
+黒峰 note 相互フォロー整理 v0.1.4（配布版）
+導入・更新・使い方ガイド
+
+このツールは、noteアプリではなくブラウザで開いた note.com の画面上で動きます。
+まずは、現在使用している「iPhoneのSafari＋Userscripts」での導入方法を説明します。
+
+
+【対応環境】
+
+基本的に以下の環境で使用できます。
+
+・iPhone：Safari＋Userscripts
+・Windows：ChromeまたはEdge＋Tampermonkey
+・Mac：ChromeまたはEdge＋Tampermonkey
+・Mac Safari：TampermonkeyなどのSafari対応ユーザースクリプト機能拡張
+・Android：Firefox＋Tampermonkey
+
+※noteアプリ内では動きません。各端末の対応ブラウザからnoteを開いてください。
+
+
+━━━━━━━━━━━━━━━━━━━━
+【メイン：iPhoneへの入れ方】
+━━━━━━━━━━━━━━━━━━━━
+
+■ 1．Userscriptsを準備する
+
+1. App Storeから「Userscripts」をインストールします。
+2. Userscriptsアプリを一度開き、案内に従ってスクリプトの保存先フォルダを設定します。
+3. iPhoneの「設定」→「アプリ」→「Safari」→「機能拡張」を開きます。
+4. 「Userscripts」をオンにします。
+
+
+■ 2．ZIPを展開する
+
+1. note-follow-sync-v0.1.4.zip をiPhoneへダウンロードします。
+2. 「ファイル」アプリを開き、「ダウンロード」フォルダを確認します。
+3. ZIPファイルを1回タップすると、同じ場所に展開済みフォルダができます。
+4. 展開したフォルダ内の note-follow-sync.user.js を確認します。
+
+
+■ 3．Userscriptsフォルダへ入れる
+
+1. note-follow-sync.user.js を長押しし、「移動」を選びます。
+2. Userscriptsアプリで設定している保存先へ移動します。
+   通常は「このiPhone内」→「Userscripts」、または「iCloud Drive」→「Userscripts」です。
+
+
+■ 4．Safariで起動する
+
+1. Safariで https://note.com/ を開き、自分のnoteアカウントへログインします。
+2. 画面上部の自分のアイコンから「自分のクリエイターページ」を開きます。
+3. Safariのアドレスバーにある機能拡張ボタンを押し、Userscriptsが有効であることを確認します。
+4. 必要な場合は、Userscriptsによる note.com へのアクセスを許可します。
+5. ページを再読み込みします。
+6. 右下に黒い丸の「黒」ボタンが表示されたら導入成功です。
+7. 「黒」を押し、パネル上部が v0.1.4 になっていることを確認します。
+
+
+■ 5．最初の使い方
+
+1. note ID欄に、自分のnote IDが自動表示されていることを確認します。
+2. IDの下に「自分のアカウント（調査＋操作）」と表示されることを確認します。
+3. 「差分を調査」を押します。
+4. 最初は調査だけ行い、結果画面を確認してください。
+5. フォロー解除やフォローバックを実行する場合は、最初は「1回 1人まで」にして試してください。
+
+※自分のnote IDが表示されない場合は、他人のページではなく、自分のクリエイターページを開いて再読み込みしてください。
+
+
+■ iPhoneで新版へ更新する場合
+
+1. 新しいZIPをダウンロードして展開します。
+2. 新しい note-follow-sync.user.js をUserscriptsの保存先へ移動します。
+3. Safariのnoteページを再読み込みします。
+4. パネル上部のバージョン番号を確認します。
+
+
+━━━━━━━━━━━━━━━━━━━━
+【Windows：Chrome／Edge】
+━━━━━━━━━━━━━━━━━━━━
+
+1. ChromeまたはEdgeを開きます。
+2. Tampermonkeyをインストールします。
+   公式案内：https://www.tampermonkey.net/
+3. ZIPを展開し、note-follow-sync.user.js を取り出します。
+4. Tampermonkeyの管理画面を開きます。
+5. 「ユーティリティ」などのファイル読み込み画面から note-follow-sync.user.js を読み込み、インストールします。
+6. ChromeまたはEdgeでnoteへログインし、自分のクリエイターページを開きます。
+7. 右下の「黒」ボタン、パネル上部の v0.1.4、自分のnote IDを確認します。
+
+
+━━━━━━━━━━━━━━━━━━━━
+【Mac：Chrome／Edge】
+━━━━━━━━━━━━━━━━━━━━
+
+Windowsと同じ手順です。
+
+1. ChromeまたはEdgeへTampermonkeyをインストールします。
+2. ZIPから note-follow-sync.user.js を取り出します。
+3. Tampermonkeyへ読み込み、有効にします。
+4. ブラウザでnoteへログインし、自分のクリエイターページを開きます。
+5. 右下の「黒」ボタン、パネル上部の v0.1.4、自分のnote IDを確認します。
+
+
+━━━━━━━━━━━━━━━━━━━━
+【Mac：Safari】
+━━━━━━━━━━━━━━━━━━━━
+
+1. App StoreからTampermonkeyなどのSafari対応ユーザースクリプト機能拡張をインストールします。
+2. MacのSafariを開き、「Safari」→「設定」→「機能拡張」で機能拡張をオンにします。
+3. note.com へのアクセスを許可します。
+4. ZIPから note-follow-sync.user.js を取り出し、使用する機能拡張へ読み込みます。
+5. Safariでnoteへログインし、自分のクリエイターページを開いて再読み込みします。
+6. 右下の「黒」ボタン、パネル上部の v0.1.4、自分のnote IDを確認します。
+
+※機能拡張によって、スクリプトを読み込む画面の名称は異なります。
+
+
+━━━━━━━━━━━━━━━━━━━━
+【Android：Firefox】
+━━━━━━━━━━━━━━━━━━━━
+
+AndroidではFirefox＋Tampermonkeyを使用します。
+
+1. AndroidへFirefoxをインストールします。
+2. Firefoxのメニューから「拡張機能」を開き、Tampermonkeyを追加します。
+   配布ページ：https://addons.mozilla.org/android/addon/tampermonkey/
+3. ZIPを展開し、note-follow-sync.user.js を取り出します。
+4. Tampermonkeyの管理画面から note-follow-sync.user.js を読み込み、インストールします。
+5. Android版Firefoxでnoteへログインし、自分のクリエイターページを開きます。
+6. 右下の「黒」ボタン、パネル上部の v0.1.4、自分のnote IDを確認します。
+
+※Androidでは、この説明書ではChromeではなくFirefoxを使用します。
+
+
+━━━━━━━━━━━━━━━━━━━━
+【黒ボタンが表示されない場合】
+━━━━━━━━━━━━━━━━━━━━
+
+次の順番で確認してください。
+
+1. noteアプリではなく、対応ブラウザで note.com を開いているか。
+2. UserscriptsまたはTampermonkeyがオンになっているか。
+3. 機能拡張に note.com へのアクセスを許可しているか。
+4. note-follow-sync.user.js が有効になっているか。
+5. noteページを再読み込みしたか。
+6. パネルに表示されるバージョンが v0.1.4 か。
+
+
+━━━━━━━━━━━━━━━━━━━━
+【調査範囲と安全について】
+━━━━━━━━━━━━━━━━━━━━
+
+・自分のクリエイターページを開くと、その人自身のnote IDを確認して自動表示します。
+・調査ボタンを押しただけでは、フォロー状態は変更されません。
+・自分のnote IDは、完全な調査結果が取れた場合だけ、選択した相手への解除・フォローバックを実行できます。
+・他人のnote IDは、調査とCSV保存だけできます。誤操作を防ぐため、実行ボタンは無効です。
+・フォローまたはフォロワーが1,000人を超える場合、noteの公開一覧が50ページ（1,000人）で止まるため、先頭1,000人までの参考比較になります。
+・1,000人を超えるアカウントでは、全体の一致・不一致とは断定できません。
+・独自ドメインを使っている相手も、一覧に表示されるnote IDで正しく集計します。
+・v0.1.4は配布版です。特定のnote IDに固定されていません。
